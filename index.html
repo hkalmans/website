@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hudson Kalmans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Pro', serif;
+            font-weight: 300;
+            font-size: 1.188rem;
+            line-height: 1.25;
+            background-color: #F6FAF8;
+            color: #3a3a3a;
+            padding: 2.5rem 1.25rem;
+        }
+
+        .wrapper {
+            max-width: 100%;
+            margin: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .container {
+            max-width: 30rem;
+            width: 100%;
+            text-align: left;
+        }
+
+        .profile-image {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .nav {
+            position: sticky;
+            top: 2.5rem;
+            margin-left: 2.5rem;
+            min-width: 9rem;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding-left: 0;
+            line-height: 1;
+            text-align: right;
+        }
+
+        .nav li {
+            margin-bottom: 0.25rem;
+        }
+
+        .nav a {
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        .section-title {
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #757575;
+            text-decoration: none;
+            border-bottom: 0.75px dashed #757575;
+        }
+
+        a:hover {
+            color: #343434;
+            border-bottom: 0.75px solid #343434;
+            background-color: rgba(52, 52, 52, 0.10);
+        }
+
+        @media (max-width: 900px) {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .nav {
+                position: static;
+                margin-left: 0;
+                margin-bottom: 2rem;
+                width: 100%;
+            }
+
+            .nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                text-align: left;
+            }
+
+            .nav li:before {
+                content: "";
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 18px;
+                padding: 30px 15px;
+            }
+
+            h1 {
+                font-size: 18px;
+            }
+
+            .nav a {
+                font-size: 16px;
+            }
+
+            .profile-image {
+                max-height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 16px;
+                padding: 20px 10px;
+            }
+
+            h1 {
+                font-size: 16px;
+            }
+
+            .nav a {
+                font-size: 14px;
+            }
+
+            .profile-image {
+                max-height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <img src="dark.jpg" alt="Dark." class="profile-image">
+
+            <p>I study math at <a href="https://math.uw.edu/" target="_blank">UW</a>.</p>
+            
+            <p>I've used to work at <a href="https://www.ipd.uw.edu/" target="_blank">the Institue for Protein Design</a>, made some cool stuff with <a href="https://en.wikipedia.org/wiki/Bayesian_optimization/" target="_blank">bayesian optimization</a>.
+            <p>Reach out to me at kalmanshudson@gmail.com</p>
+        </div>
+        
+        <nav class="nav">
+            <ul>
+                <li>Hudson Kalmans</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
+
+
+
